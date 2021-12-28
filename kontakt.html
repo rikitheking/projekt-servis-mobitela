@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Servis mobitela">
+        <meta name="keywords" content="Mobiteli, Servis">
+        <meta name="author" content="Sven Pintarić">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <center>
+            <div class="banner">
+                <div>
+                    <h1 style="color: ivory;">Mobile doctor</h1>
+                    <style>
+                        .banner {
+                            background-image: 
+                            url(images/banner.jpg);
+                            max-width: 100%;
+                            height: 20vh;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: relative;
+                        }
+                    </style>
+                </div>
+            </div>
+            <div class="header">
+            <div class="header-centre">
+            </div>
+          </div> 
+        </center>
+            <style>
+                body{
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+                .topnav a{
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14 px 16 px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    text-decoration: none;
+                    font-size: 17 px;
+                }
+                .topnav a:hover{
+                    background-color: #ddd;
+                    color: black;
+                }
+                .topnav a:active{
+                    background-color: #04AA6D;
+                    color: white;
+                }
+            </style>
+    </head>
+    <body>
+            <div class="topnav">
+                <a class="active" href="index.html"> Početna stranica </a> 
+                <a href="novosti.html"> Novosti </a> 
+                <a href="kontakt.html"> Kontakt </a> 
+                <a href="about.html"> O nama </a>
+                <a href="gallery.html"> Galerija </a>
+            </div>
+            <h1>Kontakt</h1>
+            <div id="contact">
+                <iframe src="https://www.google.hr/maps/place/Tatari+7-3,+10251,+Kupine%C4%8Dki+Kraljevec/@45.6872139,15.831963,16z/data=!4m5!3m4!1s0x47642c8d22c50b43:0xfdf2b73e54e4bb01!8m2!3d45.6872139!4d15.8345658?hl=en&authuser=0" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+                    <label for="fname">Ime *</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <br>
+    
+                    <label for="lname">Prezime *</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <br>
+                    
+                    <label for="lname">Vaš E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+                    <br>
+    
+                    <label for="country">Država</label>
+                    <select id="country" name="country">
+                      <option value="">Molimo odaberite</option>
+                      <option value="BE">Belgija</option>
+                      <option value="HR" selected>Hrvatska</option>
+                      <option value="HU">Mađarska</option>
+                      <option value="UK">Ujedinjeno Kraljevstvo</option>
+                      <option value="DE">Njemačka</option>
+                    </select>
+                    <br>
+    
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Pišite nam.." style="height:200px"></textarea>
+                    <br>
+    
+                    <input type="submit" value="Submit">
+                    <br>
+                </form>
+
+            </div>
+            <footer>
+                <a href="https://github.com/rikitheking/servis-mobitla"><img src="images/github.png" alt="Gitub" height="40px" width="40px"></a>
+                <center><p style="background-color: black;color: white;">Copyright &copy; Sven Pintarić<br></center>
+            </footer>
+    </body>
+</html>
